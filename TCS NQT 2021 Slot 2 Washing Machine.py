@@ -7,7 +7,10 @@ if __name__ == "__main__":
   elif weight > 7000:
     print("OVERLOADED!!!")
   else:
-    if weight < 2001:
+    # I forgot this in video but there is a case for 0 g weight also 
+    if weight == 0:
+      print("Time Estimated : 0 minutes")
+    elif weight < 2001:
       print("Time Estimated : 25 minutes")
     elif weight <4001:
       print("Time Estimated : 35 minutes")
